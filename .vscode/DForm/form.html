@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image:url(image.png);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>UserData</legend>
+        <label for="name">username</label>
+        <input type="text" id="name" name="username"><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="pwd"><br>
+        <!-- in radio  button we must give the name of both the options same bcz when we give
+             same name then only one value of that type will be stored in server 
+        otherwise both the values get stored with different names so both will be selected -->
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender">
+        <label for="male">Female</label><br>
+        <input type="submit" value="submit"><br>
+        <label for="Subjects">Subjects</label>
+        <select id="Subjects" name="Subjects" multiple>
+            <option value="maths">Maths</option>
+            <option value="english">English</option>
+            <option value="science">Science</option>
+        </select><br>
+
+            <label for="Subjects">Describe Subject</label>
+            <textarea name="Subjects" rows="20" columns="30">write</textarea><br>
+            <label for="date">Birthday</label>
+            <input type="date" id="Birthday" name="date">
+            <input type="file" id="file" name="file">
+            <input type="month" id="month" name="month">
+            <input type="number" id="number" name="number">
+        
+        </fieldset>
+    </form>
+    
+</body>
+</html>
